@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  --cor-primaria: #89a6ad;
+  --cor-secundaria: #93bbcd;
+  --cor-destaque: #161b37;
+  --cor-texto: #4d4d4d;
+  --cor-borda: #94acbc;
+  --cor-hover: #21365c;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  font-size: 18px;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--cor-destaque);
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgb(214, 215, 215);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 20px 0 10px;
+  font-weight: 600;
+}
+
+textarea,
+input[type="number"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  border: 2px solid var(--cor-borda);
+  border-radius: 12px;
+  background-color: var(--cor-primaria);
+  font-size: 18px;
+  color: var(--cor-texto);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+textarea:focus,
+input[type="number"]:focus {
+  border-color: var(--cor-destaque);
+  box-shadow: 0 0 8px var(--cor-destaque);
+}
+
+button {
+  background-color: var(--cor-destaque);
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: var(--cor-hover);
+  transform: scale(1.05);
+}
+
+/* Checkbox estilizado */
+input[type="checkbox"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--cor-destaque);
+  border-radius: 6px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+  vertical-align: middle;
+  transition: background-color 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--cor-destaque);
+  background-image: url("data:image/svg+xml,%3Csvg fill='white' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.285 6.709a1 1 0 0 0-1.414-1.418L9 15.17l-3.871-3.87a1 1 0 0 0-1.414 1.414l4.578 4.577a1 1 0 0 0 1.414 0L20.285 6.709z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+input[type="checkbox"]:hover {
+  background-color: var(--cor-hover);
+}

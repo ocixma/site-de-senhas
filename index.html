@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'><link rel="stylesheet" href="otherstyle.css">    
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Gerador de Senhas</title>
+
+</head>
+<body>
+
+    <h1>Gerador de Senha</h1>
+    <div class="container">
+        <div class="options-hub">
+            <label for="number-of-passwords">Quantidade de senhas:</label><br>
+            <input type="number" id="number-of-passwords" min="1" value="1">
+            <br>
+        <label for="password-length">Caracteres da Senha:</label><br>
+        <input type="number" id="password-length" min="1" value="12">
+        <label for="uppercase">Letras maiúsculas: <input type="checkbox" id="uppercase"></label>
+        <label for="lowercase">Letras minúsculas: <input type="checkbox" id="lowercase" checked></label>
+        <label for="numbers">Números: <input type="checkbox" id="numbers" checked></label>
+        <label for="special-characters">Caracteres especiais <input type="checkbox" id="special-characters"></label>
+    </div>
+        <button onclick="generatePasswords()">Gerar Senha</button>
+        <br><br>
+        <textarea id="passwords" width="50%" readonly></textarea>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
